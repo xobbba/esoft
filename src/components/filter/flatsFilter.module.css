@@ -1,0 +1,117 @@
+.flatsFilter {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-left: 3.5rem;
+}
+
+.filterHead {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+}
+.filterBody {
+    display: flex;
+    align-items: flex-end;
+
+}
+.filerRooms {
+    display: flex;
+    flex-direction: column;
+    width: 154px;
+}
+.filterTitle {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: #333;
+}
+.apartmentRooms {
+    display: flex;
+}
+
+.filterPrice {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+.filterTitle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+.apartmentPrice {
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100%;
+}
+.apartmentPrice_frame {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+    color: #848484;
+    display: flex;
+}
+.apartmentPrice_frame_text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 0;
+    height: 14px;
+}
+.filterInput {
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    min-height: 100%;
+    margin-left: 10px;
+    padding: 0;
+    outline: none;
+    font: inherit;
+    font-weight: 400;
+    line-height: inherit;
+    background: none;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+
+}
+
+.filterArea {
+    flex-basis: 209px;
+    flex-shrink: 0;
+    margin-left: 1.5rem;
+}
+.filterTitle {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+.apartmentArea {
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100%;
+}
+
+.apartmentArea_frame {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+    color: #848484;
+}
+.apartmentArea_frame_text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 0;
+    height: 14px;
+}

@@ -1,0 +1,62 @@
+.flatList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    grid-gap: 0.75rem;
+    width: 50%;
+
+}
+
+.flatList-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: -15px;
+
+
+}
+
+.flatList-page {
+    margin-top: 15px;
+
+}
+
+.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+}
+
+.pagination li {
+    list-style-type: none;
+    display: inline;
+
+}
+
+.pagination li a {
+    padding: 8px 16px;
+    float: left;
+    color: black;
+    text-decoration: none;
+
+}
+
+.pagination li.active a {
+    background-color: #4caf50;
+    color: white;
+
+}
+
+.pagination li:not(.active) a:hover {
+    background-color: #ddd;
+}
+
+.pagination li.disable {
+    display: none;
+}
+
+.buttonSort {
+    margin-bottom: 15px;
+}
