@@ -12,7 +12,7 @@ class FlatsFilter extends React.Component {
         min: null,
         max: null
       },
-      area_total: {
+      areaTotal: {
         min: null,
         max: null
       }
@@ -53,15 +53,15 @@ class FlatsFilter extends React.Component {
   }
 
   handleChangeAreaMin = e => {
-    const {area_total} = this.state
-    area_total.min = parseFloat(e.currentTarget.value)
-    this.setState({...area_total})
+    const {areaTotal} = this.state
+    areaTotal.min = parseFloat(e.currentTarget.value)
+    this.setState({...areaTotal})
   }
 
   handleChangeAreaMax = e => {
-    const {area_total} = this.state
-    area_total.max = parseFloat(e.currentTarget.value)
-    this.setState({...area_total})
+    const {areaTotal} = this.state
+    areaTotal.max = parseFloat(e.currentTarget.value)
+    this.setState({...areaTotal})
   }
 
   render() {
@@ -71,7 +71,7 @@ class FlatsFilter extends React.Component {
     const {
       rooms,
       price,
-      area_total
+      areaTotal
     } = this.state
 
 
@@ -102,13 +102,13 @@ class FlatsFilter extends React.Component {
           <div className={s.filterPrice}>
             <div className={s.filterTitle}>Стоимость, ₽</div>
             <div className={s.apartmentPrice}>
-              <span className={s.apartmentPrice_frame}>
-                <span className={s.apartmentPrice_frame_text}>
+              <span className={s.apartmentPriceFrame}>
+                <span className={s.apartmentPriceFrameText}>
                   <input type="number" placeholder={'От'} className={s.filterInput} onChange={this.handleChangePriceMin} value={price.min}/>
                 </span>
               </span>
-              <span className={s.apartmentPrice_frame}>
-                <span className={s.apartmentPrice_frame_text}>
+              <span className={s.apartmentPriceFrame}>
+                <span className={s.apartmentPriceFrameText}>
                   <input type="number" placeholder={'До'} className={s.filterInput} onChange={this.handleChangePriceMax} value={price.max}/>
                 </span>
               </span>
@@ -117,20 +117,18 @@ class FlatsFilter extends React.Component {
           <div className={s.filterArea}>
             <div className={s.filterTitle}>Площадь, м²</div>
             <div className={s.apartmentArea}>
-              <span className={s.apartmentArea_frame}>
-                <span className={s.apartmentArea_frame_text}>
-                  <input type="number" placeholder={'От'} className={s.filterInput} onChange={this.handleChangeAreaMin} value={area_total.min}/>
+              <span className={s.apartmentAreaFrame}>
+                <span className={s.apartmentAreaFrameText}>
+                  <input type="number" placeholder={'От'} className={s.filterInput} onChange={this.handleChangeAreaMin} value={areaTotal.min}/>
                 </span>
               </span>
-              <span className={s.apartmentArea_frame}>
-                <span className={s.apartmentArea_frame_text}>
-                  <input type="number" placeholder={'До'} className={s.filterInput} onChange={this.handleChangeAreaMax} value={area_total.max}/>
+              <span className={s.apartmentAreaFrame}>
+                <span className={s.apartmentAreaFrameText}>
+                  <input type="number" placeholder={'До'} className={s.filterInput} onChange={this.handleChangeAreaMax} value={areaTotal.max}/>
                 </span>
               </span>
             </div>
           </div>
-        {/*</div>*/}
-        {/*<div className={s.filterButton}>*/}
           <Button
             onClick={() => onSubmit(this.state)}
             active={false}

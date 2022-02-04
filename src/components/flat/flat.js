@@ -10,7 +10,7 @@ class Flat extends React.Component{
       floor,
       price,
       rooms,
-      area_total,
+      areaTotal,
       image,
       onClick
     } = this.props;
@@ -27,7 +27,7 @@ class Flat extends React.Component{
           <div className='info'>
             <div className='info-item'>{floor} эт.</div>
             <div className='info-item'>{rooms}-комн</div>
-            <div className='info-item'>{area_total} м²</div>
+            <div className='info-item'>{areaTotal} м²</div>
           </div>
           <div className='info-button' onClick={(e) => {onClick(id)}}>Перейти</div>
         </div>

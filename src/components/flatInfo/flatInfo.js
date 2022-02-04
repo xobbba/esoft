@@ -24,9 +24,9 @@ class FlatInfo extends React.Component {
       floor,
       price,
       rooms,
-      area_total,
-      area_kitchen,
-      area_live,
+      areaTotal,
+      areaKitchen,
+      areaLive,
       image,
       hadleFlatInfo
     } = this.props;
@@ -55,9 +55,9 @@ class FlatInfo extends React.Component {
           <div className={s.moreInfo}>
             <div className={s.flatMoreInfo}>Комнат: {rooms}</div>
             <div className={s.flatMoreInfo}>Этаж: {floor}</div>
-            <div className={s.flatMoreInfo}>Площадь: {area_total} м²</div>
-            <div className={s.flatMoreInfo}>Площадь кухни: {area_kitchen} м²</div>
-            <div className={s.flatMoreInfo}>Жилая площадь: {area_live} м²</div>
+            <div className={s.flatMoreInfo}>Площадь: {areaTotal} м²</div>
+            <div className={s.flatMoreInfo}>Площадь кухни: {areaKitchen} м²</div>
+            <div className={s.flatMoreInfo}>Жилая площадь: {areaLive} м²</div>
             <div className={s.flatMoreInfo}>Стоимость: {price} ₽</div>
           </div>
         </div>

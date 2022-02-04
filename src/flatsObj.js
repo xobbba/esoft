@@ -29,7 +29,20 @@ const flatsOnPage = 9
 const pages = Math.ceil(flatsObj.length / flatsOnPage)
 
 export function getFlats() {
-  return flatsObj
+
+  return flatsObj.map((flat) => {
+    return {
+      id: flat.id,
+      floor: flat.floor,
+      posOnFloor: flat.pos_on_floor,
+      price: flat.price,
+      rooms: flat.rooms,
+      areaTotal: flat.area_total,
+      areaKitchen: flat.area_kitchen,
+      areaLive: flat.area_live,
+      image: flat.image
+    }
+  })
 }
 
 export function getCountPages() {

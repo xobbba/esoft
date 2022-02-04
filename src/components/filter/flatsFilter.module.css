@@ -47,7 +47,7 @@
     line-height: 1.5rem;
     width: 100%;
 }
-.apartmentPrice_frame {
+.apartmentPriceFrame {
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     background-color: #fff;
@@ -56,7 +56,7 @@
     color: #848484;
     display: flex;
 }
-.apartmentPrice_frame_text {
+.apartmentPriceFrameText {
     display: flex;
     align-items: center;
     width: 100%;
@@ -99,7 +99,7 @@
     width: 100%;
 }
 
-.apartmentArea_frame {
+.apartmentAreaFrame {
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     display: flex;
@@ -108,7 +108,7 @@
     box-sizing: border-box;
     color: #848484;
 }
-.apartmentArea_frame_text {
+.apartmentAreaFrameText {
     display: flex;
     align-items: center;
     width: 100%;

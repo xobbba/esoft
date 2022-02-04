@@ -7,8 +7,6 @@ import FlatInfo from "../flatInfo/flatInfo";
 import FlatsFilter from "../filter/flatsFilter";
 import Button from "../button/button";
 
-//
-
 class FlatsList extends React.Component {
     constructor(props) {
         super(props);
@@ -60,11 +58,11 @@ class FlatsList extends React.Component {
         if (options.rooms.length !== 0) {
             allFlats = allFlats.filter(flat => options.rooms.includes(flat.rooms))
         }
-        if (options.area_total.min) {
-            allFlats = allFlats.filter(flat => flat.area_total >= options.area_total.min)
+        if (options.areaTotal.min) {
+            allFlats = allFlats.filter(flat => flat.areaTotal >= options.areaTotal.min)
         }
-        if (options.area_total.max) {
-            allFlats = allFlats.filter(flat => flat.area_total <= options.area_total.max)
+        if (options.areaTotal.max) {
+            allFlats = allFlats.filter(flat => flat.areaTotal <= options.areaTotal.max)
         }
 
         this.setState({
@@ -81,7 +79,7 @@ class FlatsList extends React.Component {
             allFlats = allFlats.sort((flat1, flat2) => flat1.price - flat2.price)
         }
         if (option === 'area') {
-            allFlats = allFlats.sort((flat1, flat2) => flat2.area_total - flat1.area_total)
+            allFlats = allFlats.sort((flat1, flat2) => flat2.areaTotal - flat1.areaTotal)
         }
 
         this.setState({
@@ -128,7 +126,7 @@ class FlatsList extends React.Component {
                                 floor={flat.floor}
                                 price={flat.price}
                                 rooms={flat.rooms}
-                                area_total={flat.area_total}
+                                areaTotal={flat.areaTotal}
                                 image={flat.image}
                                 onClick={this.handleFlatInfo}
                               />
@@ -136,9 +134,7 @@ class FlatsList extends React.Component {
                       }
 
                   </div>
-
                   <div className='flatList-page'>
-
                       <Pagination
                         itemClassPrev={'disable'}
                         itemClassNext={'disable'}
@@ -163,10 +159,10 @@ class FlatsList extends React.Component {
             floor={flat.floor}
             price={flat.price}
             rooms={flat.rooms}
-            area_total={flat.area_total}
+            areaTotal={flat.areaTotal}
             image={flat.image}
-            area_kitchen={flat.area_kitchen}
-            area_live={flat.area_live}
+            areaKitchen={flat.areaKitchen}
+            areaLive={flat.areaLive}
             hadleFlatInfo={this.handleFlatInfo}
           />
         )
